@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meus Videos</title>
+    <style>
+        .container-4-partes {
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* Divide em 2 colunas */
+        grid-template-rows: 1fr 1fr;    /* Divide em 2 linhas */
+        gap: 10px;                      /* Espaçamento entre os blocos */
+        height: 30vh;                  /* Ocupa toda a altura da tela */
+        width: 50vh;
+        }
+
+        .bloco {
+        background-color: #f0f0f0;
+        border: 1px solid #ccc;
+        }
+
+        body{
+            background-color: hwb(0 70% 7% / 0.314);
+        }        
+    </style>
+</head>
+<body>
+    <h1>Videos legais para assistir</h1>
+    <div class="container-4-partes">
+        <div class="bloco"><a href="video-js.html"><img src="imagens/thumb-hardware.png" alt="Imagem do Curso de Hardware"></a></div>
+        <div class="bloco"><img src="imagens/thumb-js.png" alt="Imagem do curso de Javascript"></div>
+        <div class="bloco"><img src="imagens/thumb-html.png" alt="Imagem do curso de HTML5"></div>
+        <div class="bloco"><img src="imagens/thumb-python.png" alt="Imagem do curso de Python"></div>
+    </div>
+</body>
+</html>
