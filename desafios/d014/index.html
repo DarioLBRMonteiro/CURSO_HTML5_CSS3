@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table {
+            border-collapse: collapse;
+            width: 500px;
+        }
+        thead{
+            background-color: gray;
+            color: white;
+        }
+
+        th,td {
+            border: 1px solid black;
+        }
+        .media{
+            background-color: gray;
+            color: white;
+            padding-left: 5px; 
+        }
+        .centralizar{
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th rowspan="2">Área</th>
+                <th rowspan="2">Disciplina</th>
+                <th colspan="2">Notas</th>
+                <th rowspan="2">Média</th>
+                <tr>
+                    <th>Nota 1</th>
+                    <th>Nota 2</th>
+                </tr>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="4" class="centralizar"><strong>Exatas</strong></td>
+                <td>Matemática</td>
+                <td class="centralizar">0.0</td>
+                <td class="centralizar">0.0</td>
+                <td class="centralizar">0.0</td>
+            </tr>
+            <tr>
+                <!--td>Exatas</td-->
+                <td>Física</td>
+                <td class="centralizar">0.0</td>
+                <td class="centralizar">0.0</td>
+                <td class="centralizar">0.0</td>
+            </tr>
+            <tr>
+                <!--td>Exatas</td-->
+                <td>Química</td>
+                <td class="centralizar">0.0</td>
+                <td class="centralizar">0.0</td>
+                <td class="centralizar">0.0</td>
+            </tr>
+            <tr>
+                <!--td>Exatas</td-->
+                <td>Biologia</td>
+                <td class="centralizar">0.0</td>
+                <td class="centralizar">0.0</td>
+                <td class="centralizar">0.0</td>
+            </tr>
+            <tr>
+                <!--td>Exatas</td-->
+                <td colspan="4" class="media">Média de Exatas</td>
+                <!--td>Média de Exatas</td-->
+                <!--td>Média de Exatas</td-->
+                <!--td>Média de Exatas</td-->
+                <td class="media centralizar">0.0</td>
+            </tr>
+            <tr>
+                <td rowspan="2" class="centralizar"><strong>Humanas</strong></td>
+                <td>História</td>
+                <td class="centralizar">0.0</td>
+                <td class="centralizar">0.0</td>
+                <td class="centralizar">0.0</td>
+            </tr>
+            <tr>
+                <!--td>Humanas</td-->
+                <td>Geografia</td>
+                <td class="centralizar">0.0</td>
+                <td class="centralizar">0.0</td>
+                <td class="centralizar">0.0</td>
+            </tr>
+            <tr>
+                <td colspan="4" class="media">Média de Humanas</td>
+                <!--td>Média de Humanas</td-->
+                <!--td>Média de Humanas</td-->
+                <!--td>Média de Humanas</td-->
+                <td class="media centralizar">0.0</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
