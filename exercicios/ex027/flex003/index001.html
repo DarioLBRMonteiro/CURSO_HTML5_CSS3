@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        div.conteiner{
+            background-color: lightsalmon;
+            /*
+            height: 100px;
+            */
+            display: flex;
+
+
+            /*
+            flex-direction: row;
+            flex-wrap: nowrap;
+            */
+
+            /* substituicao aos comandos acima */
+            flex-flow: row nowrap;
+
+            /* 
+            flex-direction
+
+            1)*******************************
+            configuração padrão 
+            direção em linha deitado e leitura da esquerda para a direita
+            flex-direction: row;
+
+            eixo (axis)
+            main-axis esquerda para direita
+            dois pontos
+            main-start ----> main-end
+
+            cross-axis de cima para baixo
+            pois pontos 
+            cross-start
+                |                |
+                |
+            cross-end
+            *********************************
+
+            2)********************************
+            direção em linha deitado e leitura da direita para a esqueda
+            flex-direction: row-reverse;
+
+           eixo (axis)
+            main-axis direita para esquerda
+            dois pontos
+            main-end <---- main-start
+
+            cross-axis de cima para baixo
+            dois pontos 
+            cross-start
+                |                |
+                |
+            cross-end
+            *******************************
+
+            3)*************************************
+            direção em linha em pé e leitura de cima para baixo
+            flex-direction: column;
+
+           eixo (axis)
+            main-axis  de cima para baixa
+            dois pontos
+            main-start
+                |
+                |
+            main-end
+
+            cross-axis de esquerda para direita
+            pois pontos 
+            cross-start ---> cross-end
+            ************************************
+
+            4)********************************************
+            direção em linha em pé e leitura de baixo para cima
+            flex-direction: column-reverse;
+
+           eixo (axis)
+            main-axis de baixa para cima
+            dois pontos
+            main-end
+                |
+                |
+            main-start
+
+            cross-axis de esquerda para direita
+            dois pontos 
+            cross-start ---> cross-end
+            ************************************************
+
+            */
+
+
+        }
+        div.item{
+            background-color: lightskyblue;
+            border: 1px solid black;
+            text-align: center;
+
+            /* não permite espaço em branco no pai 
+            flex: auto;
+            */
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="item">Exemplo de bloco 
+            A</div>
+        <div class="item">Exemplo de bloco 
+            B</div>
+        <div class="item">Exemplo de bloco 
+            C</div>
+        <div class="item">Exemplo de bloco 
+            D</div>
+        <div class="item">Exemplo de bloco 
+            E</div>
+        <div class="item">Exemplo de bloco 
+            F</div>
+        <div class="item">Exemplo de bloco 
+            G</div>
+    </div>
+</body>
+</html>
