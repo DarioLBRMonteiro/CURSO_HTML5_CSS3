@@ -7,19 +7,21 @@
     <style>
         div.conteiner{
             background-color: lightsalmon;
-            /* */
-            height: 300px;
-            
-            
+
             display: flex;
-            flex-flow: row nowrap;
+
+            flex-flow: row wrap;
             
-            /*  */
-            justify-content: center;
-            
-            align-items: center;            
-            
-            
+            /* 
+            justify-content: space-around;
+            align-items: flex-end;
+            */
+
+            /* align-content soemnte funciona com o flex-flow como wrap ou wrap-reverse*/
+
+            align-content: space-between;
+
+            height: 400px;
 
             /* 
             flex-direction
@@ -101,6 +103,10 @@
             background-color: lightskyblue;
             border: 1px solid black;
             text-align: center;
+            /*
+            flex: auto;
+            */
+            padding: 40px;
         }
     </style>
 </head>
@@ -113,6 +119,13 @@
         <div class="item">E</div>
         <div class="item">F</div>
         <div class="item">G</div>
+
+        <div class="item">H</div>
+        <div class="item">I</div>
+        <div class="item">J</div>
+        <div class="item">K</div>
+        <div class="item">L</div>
+
     </div>
 </body>
 </html>
